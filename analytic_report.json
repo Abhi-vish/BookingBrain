@@ -1,0 +1,121 @@
+{
+    "overview": {
+        "total_bookings": 119390,
+        "total_revenue": 42723497.53,
+        "currency": "USD",
+        "cancellation_rate": "37.04%"
+    },
+    "revenue_trends": {
+        "monthly_revenue": {
+            "2015-August": 1698555.34,
+            "2015-December": 673348.84,
+            "2015-July": 1146861.53,
+            "2015-November": 462989.38,
+            "2015-October": 1170206.08,
+            "2015-September": 1666155.39,
+            "2016-April": 1522984.13,
+            "2016-August": 2897535.56,
+            "2016-December": 1126843.86,
+            "2016-February": 788225.29,
+            "2016-January": 403694.85,
+            "2016-July": 2307893.04,
+            "2016-June": 1898484.79,
+            "2016-March": 1226927.65,
+            "2016-May": 1655739.66,
+            "2016-November": 1137167.16,
+            "2016-October": 1839343.42,
+            "2016-September": 2065761.79,
+            "2017-April": 2187482.01,
+            "2017-August": 3348626.53,
+            "2017-February": 1030747.41,
+            "2017-January": 869382.58,
+            "2017-July": 3132959.07,
+            "2017-June": 2600902.49,
+            "2017-March": 1412293.44,
+            "2017-May": 2452386.24
+        },
+        "yearly_revenue": {
+            "2015": 6818116.56,
+            "2016": 18870601.2,
+            "2017": 17034779.77
+        },
+        "peak_month": "2017-August",
+        "low_month": "2016-January"
+    },
+    "cancellation_analysis": {
+        "cancellation_rate": "37.04%",
+        "monthly_cancellations": {
+            "2015-August": 41.09025456415531,
+            "2015-December": 33.321917808219176,
+            "2015-July": 45.35302593659942,
+            "2015-November": 20.76923076923077,
+            "2015-October": 34.94048819850716,
+            "2015-September": 40.9464215877982,
+            "2016-April": 37.969786293294035,
+            "2016-August": 36.0458226348015,
+            "2016-December": 36.21761658031088,
+            "2016-February": 34.36134669750707,
+            "2016-January": 24.777580071174377,
+            "2016-July": 32.78652668416448,
+            "2016-June": 39.60695389266818,
+            "2016-March": 30.61774461028192,
+            "2016-May": 34.95801387367653,
+            "2016-November": 36.73102828917827,
+            "2016-October": 40.52877639851685,
+            "2016-September": 37.4860956618465,
+            "2017-April": 43.508214096449386,
+            "2017-August": 36.87309644670051,
+            "2017-February": 32.535312425185545,
+            "2017-January": 33.95816354251562,
+            "2017-July": 37.342367777150386,
+            "2017-June": 43.19107490703028,
+            "2017-March": 33.64185110663984,
+            "2017-May": 43.750990020592425
+        },
+        "cancellation_by_hotel_type": {
+            "City Hotel": 41.72696331778646,
+            "Resort Hotel": 27.763354967548675
+        }
+    },
+    "geographical_distribution": {
+        "top_booking_countries": {
+            "PRT": 49078,
+            "GBR": 12129,
+            "FRA": 10415,
+            "ESP": 8568,
+            "DEU": 7287,
+            "ITA": 3766,
+            "IRL": 3375,
+            "BEL": 2342,
+            "BRA": 2224,
+            "NLD": 2104
+        },
+        "international_vs_domestic": {
+            "International": "58.89%",
+            "Domestic": "41.11%"
+        }
+    },
+    "lead_time_analysis": {
+        "average_lead_time": "104.0 days",
+        "lead_time_distribution": {
+            "0-7 days": "16.54%",
+            "8-30 days": "15.88%",
+            "31-90 days": "24.75%",
+            "90+ days": "42.83%"
+        }
+    },
+    "booking_patterns": {
+        "most_common_booking_channel": 9.0,
+        "customer_type_distribution": {
+            "transient": 75.06,
+            "transient-party": 21.04,
+            "contract": 3.41,
+            "group": 0.48
+        }
+    },
+    "special_requests": {
+        "parking_requests": "6.21%",
+        "extra_bed_requests": "41.10%",
+        "high_floor_requests": "13.27%"
+    }
+}
