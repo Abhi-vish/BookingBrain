@@ -9,11 +9,14 @@ from dotenv import load_dotenv
 import os
 from pinecone import Pinecone
 from sentence_transformers import SentenceTransformer  # Import Hugging Face model
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
 
-api_key ="pcsk_GLSz3_MKGiTEi6nSuaSW2rmMDWHXHAi8wpsfSkX9UUz6oQtF3qeAzkX8jXfpW5B79ipg2"
-os.environ['GEMINI_API_KEY'] = "AIzaSyAQJo6PPU-mgostjORAcXjVhKZiUgv846I"
+api_key =os.getenv('PINECONE_API_KEY')
+os.environ['GEMINI_API_KEY'] = os.getenv('GEMINI_API_KEY')
 llm = LLM("gemini/gemini-1.5-flash")
 
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
