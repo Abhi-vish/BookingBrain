@@ -81,12 +81,12 @@ https://github.com/user-attachments/assets/e84bd366-8081-4bdc-a25c-ef81f100c593
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/yourusername/Booking-Data-Analysis.git
+   git clone https://github.com/Abhi-vish/BookingBrain.git
    ```
 
 2. **Navigate to the Directory**:
    ```bash
-   cd Booking-Data-Analysis
+   cd BookingBrain
    ```
 
 3. **Install Dependencies**:
@@ -98,6 +98,7 @@ https://github.com/user-attachments/assets/e84bd366-8081-4bdc-a25c-ef81f100c593
    Create a `.env` file in the root directory and add your Pinecone API key:
    ```
    PINECONE_API_KEY=your_pinecone_api_key
+   GEMINI_API_KEY=your_gemini_api_key
    ```
 
 5. **Run the Application**:
