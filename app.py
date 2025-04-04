@@ -37,7 +37,7 @@ def query_resolver(query, context):
     result = crew.kickoff()
     return result
 
-def retrieve_embedding(query,top_k=10):
+def retrieve_embedding(query,top_k=30):
     # Connect to the index
     index_name = "booking-data"
     index = pinecone.Index(index_name)
@@ -53,8 +53,8 @@ def retrieve_embedding(query,top_k=10):
         print(match['metadata']['text'])
     return matched_data
 
-@app.post("/analytic_report")
-async def create_analytic_report(report: dict):
+@app.post("/analytics")
+async def create_analytic_report():
     with open("analytic_report.json", "r") as file:
         analytic_report = json.load(file)
     return analytic_report
@@ -63,7 +63,7 @@ async def create_analytic_report(report: dict):
 class BookingQuery(BaseModel):
     query:str
 
-@app.post("/booking_query")
+@app.post("/ask")
 async def create_booking_query(data:BookingQuery):
     query = data.query
     context = retrieve_embedding(query)

@@ -18,13 +18,13 @@ st.set_page_config(
 
 # Define the API endpoints
 API_URL = "http://localhost:8000"  # Change this to your FastAPI server URL
-ANALYTICS_ENDPOINT = f"{API_URL}/analytic_report"
-QUERY_ENDPOINT = f"{API_URL}/booking_query"
+ANALYTICS_ENDPOINT = f"{API_URL}/analytics"
+QUERY_ENDPOINT = f"{API_URL}/ask"
 
 # Function to fetch analytics data
 def get_analytics_data():
     try:
-        response = requests.post(ANALYTICS_ENDPOINT, json={})
+        response = requests.post(ANALYTICS_ENDPOINT)
         if response.status_code == 200:
             return response.json()
         else:
@@ -184,19 +184,6 @@ if page == "Dashboard":
         )
         st.plotly_chart(fig, use_container_width=True)
         
-        # International vs Domestic Bookings
-        st.markdown("<div class='sub-header'>International vs Domestic Bookings</div>", unsafe_allow_html=True)
-        int_dom_data = pd.DataFrame(
-            list(analytics_data['geographical_distribution']['international_vs_domestic'].items()),
-            columns=['Category', 'Percentage']
-        )
-        fig = px.pie(
-            int_dom_data, 
-            values='Percentage', 
-            names='Category',
-            title='International vs Domestic Bookings'
-        )
-        st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("Unable to fetch analytics data. Please check if the API server is running.")
 
@@ -292,18 +279,5 @@ elif page == "About":
     """, unsafe_allow_html=True)
 
 # Footer
-st.sidebar.markdown("---")
-st.sidebar.markdown("#### System Health")
-if st.sidebar.button("Check System Status"):
-    try:
-        # This is a placeholder - ideally you'd have a health endpoint
-        response = requests.get(f"{API_URL}/health", timeout=5)
-        if response.status_code == 200:
-            st.sidebar.success("All systems operational")
-        else:
-            st.sidebar.warning("System experiencing issues")
-    except:
-        st.sidebar.error("Unable to connect to API")
-
 st.sidebar.markdown("---")
 st.sidebar.markdown("© 2025 Booking Analytics & QA System")

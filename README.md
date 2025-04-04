@@ -71,6 +71,12 @@ Booking-Data-Analysis/
 └── implementation_report.md  # Report on implementation choices and challenges
 ```
 
+## Crewai Agent workflow Diagram
+![Image](https://github.com/user-attachments/assets/835a7044-1fbe-4686-9496-ffb8bc46d496)
+
+## Demo Video Streamlit GUI Intergrated with Fastapi Backend
+https://github.com/user-attachments/assets/e84bd366-8081-4bdc-a25c-ef81f100c593
+
 ## Repository Setup Instructions
 
 1. **Clone the Repository**: 
