@@ -9,6 +9,8 @@ This report outlines the implementation choices made during the development of t
 - **Python**: The primary programming language used for data processing and analysis.
 - **Streamlit**: Chosen for building the web application interface due to its simplicity and ease of use for data visualization.
 - **Pinecone**: Utilized for storing and retrieving sentence embeddings efficiently, allowing for quick access to processed booking information.
+- **CrewAI**: Utilized for Creating LLM Powered agent, which is used to generate responses to user queries.
+- **FastAPI**: Used for building the API endpoints for data retrieval and analysis, providing a robust and scalable solution.
 
 ### 2. Data Processing
 - **Sentence Embeddings**: Implemented to convert booking information into a format suitable for machine learning analysis. This choice was made to enhance the model's ability to understand and process natural language data.
