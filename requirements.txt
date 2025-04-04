@@ -4,3 +4,7 @@ numpy
 streamlit
 pinecone-client
 python-dotenv
+fastapi
+pinecone
+uvicorn
+
